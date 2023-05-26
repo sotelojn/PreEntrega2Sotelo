@@ -14,14 +14,26 @@ a:visited {
   text-decoration: none;
 }
 
-main{
-  font-family: 'Quicksand', sans-serif;
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
-header{
-  font-family: 'Quicksand', sans-serif;
+/* estilos comunes cabecera y footer */
+.divImagenLogo {
+  width: 100px;
 }
-/* estilos desktop */
+
+.divImagenLogo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.divRedes a img,
+.ulRedes li a img {
+  width: 20px;
+  height: 20px;
+}
+
 /* estilos cabecera todos los html*/
 header {
   background-color: whitesmoke;
@@ -29,21 +41,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
-}
-
-header .divImagenLogo {
-  width: 100px;
-}
-
-header .divImagenLogo img {
-  width: 100%;
-  object-fit: cover;
-}
-
-header .divRedes a img {
-  width: 20px;
-  height: 20px;
+  padding: 1rem 6rem;
 }
 
 header .divRedes a .imagenInstagram {
@@ -59,7 +57,6 @@ header .navegacion ul {
 header .navegacion ul li {
   list-style: none;
   padding: 0.3rem;
-  /* margin: 10px; */
   background-color: rgb(46, 85, 165);
   color: whitesmoke;
   text-align: center;
@@ -71,6 +68,55 @@ header .navegacion ul li a {
   color: whitesmoke;
 }
 
+/* estilos footer todos los html*/
+footer {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+}
+
+footer .divImagenLogo {
+  width: 100px;
+}
+
+footer .divImagenLogo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer .ulProductos li a {
+  font-weight: bold;
+}
+
+footer .ulRedes,
+footer .ulProductos {
+  list-style: none;
+}
+
+
+footer .ulRedes li {
+  margin-bottom: 4px;
+}
+
+footer .ulRedes li a .imagenCorreo {
+  width: 20px;
+  height: 20px;
+}
+
+footer .ulRedes li a .imagenMapa {
+  width: 22px;
+  height: 20px;
+}
+
+footer figure figcaption {
+  text-align: start;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
 /* estilo menu actual */
 header .navegacion ul .itemActual {
   background-color: whitesmoke;
@@ -79,7 +125,6 @@ header .navegacion ul .itemActual {
 header .navegacion ul .itemActual a {
   color: rgb(46, 85, 165);
   padding: 0.2rem;
-  /* margin: 10px; */
   border: 0.15rem dashed;
 }
 
@@ -125,38 +170,46 @@ header .navegacion ul .itemActual a {
 }
 
 /* estilos contacto.html*/
-.mainContacto form{
+.mainContacto form {
   width: 30%;
   margin: 4rem;
 }
 
-.mainContacto form #ejemploMail{
+.mainContacto form #ejemploMail {
   margin: 1rem;
 }
 
-.mainContacto form #ejemploApellidoNombre{
+.mainContacto form #ejemploApellidoNombre {
   margin: 1rem;
 }
 
 /* estilos puntosVentas.html*/
-
-.mapa{
+.mapa {
   margin: 3rem;
 }
 
-.mapa h2{
-  color:rgb(46, 85, 165);
+.mapa h2 {
+  color: rgb(46, 85, 165);
   margin: 1rem 0rem;
 }
 
+
+/* estilos main pagina en construccion*/
+.mainConstruccion{
+  text-align: center;
+}
+
+.mainConstruccion img{
+  width: 50%;  
+}
+
+
 /* estilos tablet */
 @media screen and (max-width: 900px) {
-  
-  header{
+  header {
     padding: 1rem;
   }
 
-  
   header .navegacion ul {
     flex-flow: column wrap;
   }
@@ -178,31 +231,34 @@ header .navegacion ul .itemActual a {
     margin-top: 4rem;
   }
 
-  .mainIndex .textoProducto{
+  .mainIndex .textoProducto {
     text-align: center;
     margin-left: 10rem;
     margin-top: 2rem;
-
   }
 
   /* estilos contactos tablet*/
-  .mainContacto form{
+  .mainContacto form {
     width: 70%;
     margin: 4rem;
   }
+
+  /* estilos productos tablet*/
+  .mainProductos img{
+    width: 80%;  
+  }
+  
 }
 
 /* estilos celulares */
 
 @media screen and (max-width: 500px) {
-  
-  
   header .navegacion ul li {
     padding: 0.2rem;
     /* margin: 10px; */
     background-color: rgb(46, 85, 165);
   }
-  
+
   header .navegacion ul li a {
     font-size: 0.7rem;
   }
@@ -210,7 +266,4 @@ header .navegacion ul .itemActual a {
   header .navegacion ul .itemActual a {
     padding: 0.2rem;
   }
-
-
-
 }

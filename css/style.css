@@ -164,8 +164,8 @@ header .navegacion ul .itemActual a {
 
 .mainIndex .textoProducto {
   grid-area: textoProducto;
-  text-align: left;
-  padding-right: 12.5rem;
+  /* text-align: left; */
+  /* padding: 0.5 rem; */
   font-size: 1rem;
 }
 
@@ -229,12 +229,14 @@ header .navegacion ul .itemActual a {
   .mainIndex .tituloProducto {
     margin-bottom: 4rem;
     margin-top: 4rem;
+    font-size: 1.5rem;
   }
 
   .mainIndex .textoProducto {
     text-align: center;
-    margin-left: 10rem;
-    margin-top: 2rem;
+    /* margin-left: 10rem; */
+    /* margin-top: 2rem; */
+    padding: 0rem 3rem;
   }
 
   /* estilos contactos tablet*/

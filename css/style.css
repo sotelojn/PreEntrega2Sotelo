@@ -88,6 +88,7 @@ footer .divImagenLogo img {
 
 footer .ulProductos li a {
   font-weight: bold;
+  color:  rgb(46, 85, 165);
 }
 
 footer .ulRedes,
@@ -116,6 +117,8 @@ footer figure figcaption {
   text-decoration: underline;
   margin-bottom: 1rem;
 }
+
+
 
 /* estilo menu actual */
 header .navegacion ul .itemActual {
@@ -168,16 +171,19 @@ header .navegacion ul .itemActual a {
 }
 
 /* estilos contacto.html*/
+.mainContacto{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;  /* para centrar el form*/
+  justify-content:space-evenly; 
+}
 .mainContacto form {
-  width: 30%;
+  width: 20%;
   margin: 4rem;
 }
 
-.mainContacto form #ejemploMail {
-  margin: 1rem;
-}
-
-.mainContacto form #ejemploApellidoNombre {
+.mainContacto .imagenJustConecta{
+  width: 50vw;
   margin: 1rem;
 }
 
@@ -203,7 +209,7 @@ header .navegacion ul .itemActual a {
 
 
 /* estilos tablet */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   header {
     padding: 1rem;
   }
@@ -239,8 +245,12 @@ header .navegacion ul .itemActual a {
 
   /* estilos contactos tablet*/
   .mainContacto form {
-    width: 70%;
+    width: 50%;
     margin: 4rem;
+  }
+
+  .mainContacto img{
+    display: none;
   }
 
   /* estilos productos tablet*/

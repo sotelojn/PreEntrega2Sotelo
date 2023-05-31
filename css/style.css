@@ -164,8 +164,6 @@ header .navegacion ul .itemActual a {
 
 .mainIndex .textoProducto {
   grid-area: textoProducto;
-  /* text-align: left; */
-  /* padding: 0.5 rem; */
   font-size: 1rem;
 }
 
@@ -234,9 +232,9 @@ header .navegacion ul .itemActual a {
 
   .mainIndex .textoProducto {
     text-align: center;
-    /* margin-left: 10rem; */
-    /* margin-top: 2rem; */
-    padding: 0rem 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
   }
 
   /* estilos contactos tablet*/
@@ -250,6 +248,17 @@ header .navegacion ul .itemActual a {
     width: 80%;  
   }
   
+  footer{
+    padding: 1rem;
+  }
+
+  footer figure figcaption{
+    font-size: 0.8rem;
+  }
+
+  footer .ulProductos li a{
+    font-size: 0.8rem;
+  }
 }
 
 /* estilos celulares */
@@ -257,7 +266,6 @@ header .navegacion ul .itemActual a {
 @media screen and (max-width: 500px) {
   header .navegacion ul li {
     padding: 0.2rem;
-    /* margin: 10px; */
     background-color: rgb(46, 85, 165);
   }
 

@@ -1,0 +1,18 @@
+//tamaño de las imagnes redes sociales
+@mixin imgTamañoRedes{
+    width: 20px;
+    height: 20px;
+}
+
+@mixin flexHeaderFooter{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+@mixin coverCien{
+    object-fit: cover;
+    width: 100%;
+}

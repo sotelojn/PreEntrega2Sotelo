@@ -1,0 +1,146 @@
+//en este scss se trabajaran los estilos generales
+
+/* estilo desktop generales */
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font principal */
+body {
+    font-family: $fontPrincipal;
+}
+
+/* comportamiento links */
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* imagen logo */
+.divImagenLogo {
+    width: 100px;
+    img{
+        @include coverCien;
+    }
+}
+/* header general */
+header{
+    background-color: $colorFooterHeader;
+    @include flexHeaderFooter;
+    .divRedes a{
+        img{
+            @include imgTamañoRedes;
+        }
+        .imgInstagram{
+                margin-right: 0.2rem;
+        }
+
+    }
+    .navegacion{
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0.5rem;
+            .itemActual{
+                /*menu actual*/
+                background-color: $colorFooterHeader;
+                a{
+                    color: $colorPrincipal;
+                    padding: 0.2rem;
+                    border: 0.15rem dashed;
+                }
+            }
+            li{
+                /* resto del los items del menu */
+                padding: 0.3rem;
+                background-color: $colorPrincipal;
+                color: $colorFooterHeader;
+                text-align: center;
+                a{
+                    text-transform: uppercase;
+                    font-size: large;
+                    color: $colorFooterHeader;
+                }
+            }
+        }
+    }
+}
+
+/*footer general*/
+footer {
+    background-color: $colorFooterHeader;
+    @include flexHeaderFooter;
+    //lista de productos
+    .ulProductos{
+        li a{ 
+                font-weight: bold;
+                color: $colorPrincipal;
+                img{
+                    @include imgTamañoRedes;
+                }
+        }
+    }
+    //lista de redes
+    .ulRedes{
+        li{
+            margin-bottom: 4px;
+            a img{
+                    @include imgTamañoRedes;
+            }
+        }
+    }
+    figure{
+        figcaption{
+            text-align: start;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/* estilo tablet generales */
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 1rem;
+        .navegacion ul{
+            flex-flow: column wrap;
+            ul li a{
+                font-size: $tamanioFontTablet;
+            }
+        }
+      }
+    footer{
+        padding: 1rem;
+        figure figcaption{
+            font-size: $tamanioFontTablet;
+        }
+        footer .ulProductos li a{
+            font-size: $tamanioFontTablet;
+        }
+    }
+}
+
+/* estilos celulares */
+@media screen and (max-width: 500px) {
+    header .navegacion ul li {
+      padding: 0.2rem;
+      a{
+        font-size: $tamanioFontCelular;
+      }
+    } 
+
+    footer figure .ulProductos li a {
+        font-size: $tamanioFontCelular;
+    }
+}

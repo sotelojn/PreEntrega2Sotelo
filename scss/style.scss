@@ -1,0 +1,12 @@
+//import de utilidades
+@import "./scss/utilidades/variables";
+@import "./scss/utilidades/mixins";
+@import "./scss/utilidades/extends";
+
+//import por html
+@import "./pages/general";
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/productos";
+@import "./pages/puntosVentas";
+@import "./pages/quienSoy";

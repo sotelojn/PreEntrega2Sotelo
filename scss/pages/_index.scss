@@ -1,0 +1,67 @@
+/* estilos del index */
+.mainIndex{
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+    grid-template-areas:
+        "banner banner"
+        "titulo titulo"
+        "imagenProducto textoProducto";
+    .imagenBanner{
+        grid-area: banner;
+        @include coverCien;
+        height: 80%;
+        align-self: start;
+    }
+    .tituloProducto {
+        grid-area: titulo;
+        justify-self: center;
+        font-size: 2rem;
+        color: $colorPrincipal;
+    }
+    .imagenProducto {
+        grid-area: imagenProducto;
+        justify-self: end;
+        width: 80%;
+    }
+    .textoProducto {
+        grid-area: textoProducto;
+        font-size: 1rem;
+    }
+      
+}
+
+/* estilos tablet */
+@media screen and (max-width: 1000px) {
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        .tituloProducto {
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        }
+       .textoProducto {
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+      }
+    }
+}
+
+/* estilos celular */
+@media screen and (max-width: 500px) {
+    .mainIndex {
+        gap: 1rem;
+        .tituloProducto {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+    }
+}

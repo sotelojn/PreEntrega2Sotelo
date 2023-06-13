@@ -136,6 +136,10 @@ footer {
   .mainIndex .textoProducto {
     grid-area: textoProducto;
     font-size: 1rem; }
+    .mainIndex .textoProducto span {
+      font-size: 1.5rem;
+      color: #2e55a5;
+      font-weight: bold; }
 
 /* estilos tablet */
 @media screen and (max-width: 1000px) {

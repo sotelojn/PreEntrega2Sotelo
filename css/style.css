@@ -137,7 +137,7 @@ footer {
     grid-area: textoProducto;
     font-size: 1rem; }
     .mainIndex .textoProducto span {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #2e55a5;
       font-weight: bold; }
 
@@ -157,7 +157,11 @@ footer {
       text-align: center;
       padding-left: 3rem;
       padding-right: 3rem;
-      padding-bottom: 1rem; } }
+      padding-bottom: 1rem; }
+      .mainIndex .textoProducto span {
+        font-size: 0.9rem;
+        color: #2e55a5;
+        font-weight: bold; } }
 
 /* estilos celular */
 @media screen and (max-width: 500px) {
@@ -196,12 +200,30 @@ footer {
     margin: 0 auto;
     max-height: 50%;
     max-width: 50%; }
+  .mainProductos h1 {
+    text-align: center;
+    margin: 6rem 0rem;
+    color: #2e55a5; }
+  .mainProductos .grillaProductos .col img {
+    width: 100%; }
+  .mainProductos .grillaProductos .col span {
+    font-size: 1rem;
+    color: #2e55a5;
+    font-weight: bold; }
+  .mainProductos .grillaProductos .col p {
+    font-size: 0.9rem;
+    text-align: center; }
 
 /* estilos celular */
 @media screen and (max-width: 500px) {
-  /* Estilos de productos */
-  .mainProductos #carouselProductos {
-    display: none; } }
+  .mainProductos #carouselExampleDark {
+    display: none; }
+  .mainProductos .grillaProductos .col p {
+    font-size: 0.7rem; }
+  .mainProductos .grillaProductos .col span {
+    font-size: 0.9rem;
+    color: #2e55a5;
+    font-weight: bold; } }
 
 /* estilos puntos de ventas */
 .puntosVentasSectionMapa {

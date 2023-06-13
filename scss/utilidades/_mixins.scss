@@ -16,3 +16,9 @@
     object-fit: cover;
     width: 100%;
 }
+
+@mixin palbraResaltada ($tamaño){
+    font-size: $tamaño;
+    color:$colorPrincipal;
+    font-weight: bold;
+}

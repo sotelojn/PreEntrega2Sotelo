@@ -30,9 +30,7 @@
         grid-area: textoProducto;
         font-size: 1rem;
         span{
-            font-size: 1.5rem;
-            color:$colorPrincipal;
-            font-weight: bold;
+            @include palbraResaltada(1.2rem)
         }
     }
       
@@ -56,6 +54,9 @@
         padding-left: 3rem;
         padding-right: 3rem;
         padding-bottom: 1rem;
+        span{
+            @include palbraResaltada($tamanioFontTablet)
+        }
       }
     }
 }

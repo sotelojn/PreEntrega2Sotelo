@@ -6,13 +6,41 @@
         max-height: 50%;
         max-width: 50%;
     }
+    h1{
+        text-align: center;
+        margin: 6rem 0rem;
+        color: $colorPrincipal;
+    }
+    .grillaProductos .col{
+        img{
+            width: 100%;
+            
+        }
+        span{
+            @include palbraResaltada(1rem)
+        }
+        p{
+            font-size: $tamanioFontTablet;
+            text-align: center;
+        }
+    }
 }
 
 
 /* estilos celular */
 @media screen and (max-width: 500px) {
-    /* Estilos de productos */
-    .mainProductos #carouselProductos {
+    .mainProductos {
+        #carouselExampleDark {
             display: none;
         }
+        .grillaProductos .col {
+            p{    
+                font-size: $tamanioFontCelular;
+            }
+            span{
+                @include palbraResaltada($tamanioFontTablet)
+            }
+        }
+
+    }
 }

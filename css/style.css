@@ -103,6 +103,12 @@ footer {
 
 /* estilos celulares */
 @media screen and (max-width: 500px) {
+  /* imagen logo */
+  .divImagenLogo {
+    width: 65px; }
+    .divImagenLogo img {
+      object-fit: cover;
+      width: 100%; }
   header .navegacion ul li {
     padding: 0.2rem; }
     header .navegacion ul li a {
@@ -178,8 +184,8 @@ footer {
   /* para centrar el form*/
   align-items: center;
   justify-content: space-evenly; }
-  .mainContacto from {
-    width: 20%;
+  .mainContacto .formulario form {
+    width: 80%;
     margin: 4rem; }
   .mainContacto .imagenJustConecta {
     width: 50vw;
@@ -187,9 +193,9 @@ footer {
 
 /* estilos contactos tablet*/
 @media screen and (max-width: 1000px) {
-  .mainContacto form {
-    width: 50%;
-    margin: 4rem; }
+  .mainContacto .formulario form {
+    width: 70%;
+    margin: 2rem; }
   .mainContacto img {
     display: none; } }
 
@@ -226,12 +232,15 @@ footer {
     font-weight: bold; } }
 
 /* estilos puntos de ventas */
-.puntosVentasSectionMapa {
-  margin: 3rem; }
-  .puntosVentasSectionMapa h2 {
+main .puntosVentasMapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem; }
+  main .puntosVentasMapa h2 {
     color: #2e55a5;
     margin: 1rem 0rem; }
-
-.puntosVentasSectionMapa .mapa {
-  width: 70vw;
-  height: 70vh; }
+  main .puntosVentasMapa .mapa {
+    width: 70vw;
+    height: 70vh; }

@@ -5,9 +5,9 @@
     /* para centrar el form*/
     align-items: center;  
     justify-content:space-evenly; 
-    from{
-        width: 20%;
-        margin: 4rem;
+    .formulario form{
+            width: 80%;
+            margin: 4rem;
     }
     .imagenJustConecta{
         width: 50vw;
@@ -17,10 +17,11 @@
 
   /* estilos contactos tablet*/
 @media screen and (max-width: 1000px) {
-  .mainContacto form {
-    width: 50%;
-    margin: 4rem;
+  .mainContacto .formulario  form{
+      width: 70%;
+      margin: 2rem;       
   }
+  
   .mainContacto img{
     display: none;
   }

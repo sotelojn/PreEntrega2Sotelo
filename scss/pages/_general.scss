@@ -133,6 +133,15 @@ footer {
 
 /* estilos celulares */
 @media screen and (max-width: 500px) {
+    
+    /* imagen logo */
+    .divImagenLogo {
+        width: 65px;
+        img{
+            @include coverCien;
+        }
+    }
+    
     header .navegacion ul li {
       padding: 0.2rem;
       a{

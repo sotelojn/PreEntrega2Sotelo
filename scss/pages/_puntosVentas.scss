@@ -1,13 +1,17 @@
 /* estilos puntos de ventas */
-.puntosVentasSectionMapa {
-    margin: 3rem;
+main .puntosVentasMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
     h2{
         color:$colorPrincipal;
         margin: 1rem 0rem;
     }
-}
+    .mapa{
+        width: 70vw;
+        height: 70vh;
+    }
 
-.puntosVentasSectionMapa .mapa{
-    width: 70vw;
-    height: 70vh;
 }

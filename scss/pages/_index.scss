@@ -5,6 +5,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 2rem;
+    padding: 1rem;
     grid-template-areas:
         "banner banner"
         "titulo titulo"
@@ -19,8 +20,7 @@
         grid-area: titulo;
         justify-self: center;
         color: $colorPrincipal;
-        font-size: 2rem;
-        
+        font-size: 2rem;        
     }
     .imagenProducto {
         grid-area: imagenProducto;
@@ -31,6 +31,7 @@
     .textoProducto {
         grid-area: textoProducto;
         font-size: $tamanioFontTablet;
+        width: 500px;
         span{
             @include palbraResaltada(1.2rem)
         }
@@ -50,11 +51,15 @@
             margin-bottom: 4rem;
             margin-top: 4rem;
         }
+        .imagenProducto {
+            width: 70%;
+        }
        .textoProducto {
             text-align: center;
             padding-left: 3rem;
             padding-right: 3rem;
             padding-bottom: 1rem;
+            width: 80%;
             span{
                 @include palbraResaltada($tamanioFontTablet)
             }
@@ -69,6 +74,12 @@
         .tituloProducto {
             margin-bottom: 1rem;
             font-size: 1.5rem;
+        }
+        .textoProducto{
+            width: 100%;
+        }
+        .imagenProducto {
+            width: 70%;
         }
     }
 }

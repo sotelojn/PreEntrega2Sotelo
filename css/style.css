@@ -129,6 +129,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 2rem;
+  padding: 1rem;
   grid-template-areas: "banner banner" "titulo titulo" "imagenProducto textoProducto"; }
   .mainIndex .imagenBanner {
     grid-area: banner;
@@ -148,7 +149,8 @@ footer {
     font-weight: bold; }
   .mainIndex .textoProducto {
     grid-area: textoProducto;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    width: 500px; }
     .mainIndex .textoProducto span {
       font-size: 1.2rem;
       color: #2e55a5;
@@ -165,11 +167,14 @@ footer {
     .mainIndex .tituloProducto {
       margin-bottom: 4rem;
       margin-top: 4rem; }
+    .mainIndex .imagenProducto {
+      width: 70%; }
     .mainIndex .textoProducto {
       text-align: center;
       padding-left: 3rem;
       padding-right: 3rem;
-      padding-bottom: 1rem; }
+      padding-bottom: 1rem;
+      width: 80%; }
       .mainIndex .textoProducto span {
         font-size: 0.9rem;
         color: #2e55a5;
@@ -181,7 +186,11 @@ footer {
     gap: 1rem; }
     .mainIndex .tituloProducto {
       margin-bottom: 1rem;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+    .mainIndex .textoProducto {
+      width: 100%; }
+    .mainIndex .imagenProducto {
+      width: 70%; } }
 
 /* estilos de la pagina contacto */
 .mainContacto {

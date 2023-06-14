@@ -19,8 +19,8 @@ a:visited {
 ul {
   list-style: none; }
 
-/* imagen logo */
 .divImagenLogo {
+  /* imagen logo footer y header */
   width: 100px; }
   .divImagenLogo img {
     object-fit: cover;
@@ -42,7 +42,9 @@ header {
   header .navegacion ul {
     display: flex;
     flex-flow: row nowrap;
-    gap: 0.5rem; }
+    gap: 0.5rem;
+    padding-inline-start: 0px;
+    margin-bottom: 0px; }
     header .navegacion ul .itemActual {
       /*menu actual*/
       background-color: whitesmoke; }
@@ -91,9 +93,13 @@ footer {
   header {
     padding: 1rem; }
     header .navegacion ul {
+      padding-inline-start: 0;
       flex-flow: column wrap; }
-      header .navegacion ul ul li a {
+      header .navegacion ul li a {
         font-size: 0.9rem; }
+    header .divRedes {
+      width: 100px;
+      text-align: end; }
   footer {
     padding: 1rem; }
     footer figure figcaption {
@@ -103,8 +109,8 @@ footer {
 
 /* estilos celulares */
 @media screen and (max-width: 500px) {
-  /* imagen logo */
   .divImagenLogo {
+    /* imagen logo footer y header*/
     width: 65px; }
     .divImagenLogo img {
       object-fit: cover;
@@ -183,19 +189,27 @@ footer {
   flex-direction: row;
   /* para centrar el form*/
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-between;
+  margin: 2rem 2em 2rem 5rem; }
   .mainContacto .formulario form {
-    width: 80%;
-    margin: 4rem; }
-  .mainContacto .imagenJustConecta {
-    width: 50vw;
+    width: 100%;
     margin: 1rem; }
+    .mainContacto .formulario form label {
+      margin: 0.5rem 0rem; }
+    .mainContacto .formulario form button {
+      margin-top: 0.5rem; }
+  .mainContacto .imagenJustConecta {
+    width: 50vw; }
 
 /* estilos contactos tablet*/
 @media screen and (max-width: 1000px) {
-  .mainContacto .formulario form {
-    width: 70%;
-    margin: 2rem; }
+  .mainContacto {
+    margin: 2rem 0rem;
+    justify-content: center;
+    align-items: center; }
+    .mainContacto .formulario form {
+      width: 70%;
+      margin: 0 auto; }
   .mainContacto img {
     display: none; } }
 

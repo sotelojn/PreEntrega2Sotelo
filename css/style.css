@@ -139,15 +139,16 @@ footer {
   .mainIndex .tituloProducto {
     grid-area: titulo;
     justify-self: center;
-    font-size: 2rem;
-    color: #2e55a5; }
+    color: #2e55a5;
+    font-size: 2rem; }
   .mainIndex .imagenProducto {
     grid-area: imagenProducto;
     justify-self: end;
     width: 80%; }
   .mainIndex .textoProducto {
     grid-area: textoProducto;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-weight: bold; }
     .mainIndex .textoProducto span {
       font-size: 1.2rem;
       color: #2e55a5;
@@ -163,8 +164,7 @@ footer {
     justify-content: center; }
     .mainIndex .tituloProducto {
       margin-bottom: 4rem;
-      margin-top: 4rem;
-      font-size: 1.5rem; }
+      margin-top: 4rem; }
     .mainIndex .textoProducto {
       text-align: center;
       padding-left: 3rem;
@@ -181,7 +181,7 @@ footer {
     gap: 1rem; }
     .mainIndex .tituloProducto {
       margin-bottom: 1rem;
-      font-size: 1rem; } }
+      font-size: 1.5rem; } }
 
 /* estilos de la pagina contacto */
 .mainContacto {

@@ -258,3 +258,9 @@ main .puntosVentasMapa {
   main .puntosVentasMapa .mapa {
     width: 70vw;
     height: 70vh; }
+
+/* estilos pagina quien soy*/
+.mainQuienSoy {
+  text-align: center; }
+  .mainQuienSoy img {
+    width: 50vw; }

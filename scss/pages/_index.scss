@@ -26,11 +26,11 @@
         grid-area: imagenProducto;
         justify-self: end;
         width: 80%;
+        font-weight: bold;
     }
     .textoProducto {
         grid-area: textoProducto;
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: $tamanioFontTablet;
         span{
             @include palbraResaltada(1.2rem)
         }
@@ -47,17 +47,17 @@
         align-items: center;
         justify-content: center;
         .tituloProducto {
-        margin-bottom: 4rem;
-        margin-top: 4rem;
+            margin-bottom: 4rem;
+            margin-top: 4rem;
         }
        .textoProducto {
-        text-align: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 1rem;
-        span{
-            @include palbraResaltada($tamanioFontTablet)
-        }
+            text-align: center;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 1rem;
+            span{
+                @include palbraResaltada($tamanioFontTablet)
+            }
       }
     }
 }

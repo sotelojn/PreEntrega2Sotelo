@@ -144,11 +144,11 @@ footer {
   .mainIndex .imagenProducto {
     grid-area: imagenProducto;
     justify-self: end;
-    width: 80%; }
+    width: 80%;
+    font-weight: bold; }
   .mainIndex .textoProducto {
     grid-area: textoProducto;
-    font-size: 1rem;
-    font-weight: bold; }
+    font-size: 0.9rem; }
     .mainIndex .textoProducto span {
       font-size: 1.2rem;
       color: #2e55a5;
@@ -195,7 +195,8 @@ footer {
     width: 100%;
     margin: 1rem; }
     .mainContacto .formulario form label {
-      margin: 0.5rem 0rem; }
+      margin: 0.5rem 0rem;
+      color: #2e55a5; }
     .mainContacto .formulario form button {
       margin-top: 0.5rem; }
   .mainContacto .imagenJustConecta {
@@ -238,12 +239,14 @@ footer {
 @media screen and (max-width: 500px) {
   .mainProductos #carouselExampleDark {
     display: none; }
-  .mainProductos .grillaProductos .col p {
-    font-size: 0.7rem; }
-  .mainProductos .grillaProductos .col span {
-    font-size: 0.9rem;
-    color: #2e55a5;
-    font-weight: bold; } }
+  .mainProductos .grillaProductos .col {
+    margin: 1rem; }
+    .mainProductos .grillaProductos .col p {
+      font-size: 0.9rem; }
+    .mainProductos .grillaProductos .col span {
+      font-size: 0.9rem;
+      color: #2e55a5;
+      font-weight: bold; } }
 
 /* estilos puntos de ventas */
 main .puntosVentasMapa {

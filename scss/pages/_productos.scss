@@ -34,8 +34,9 @@
             display: none;
         }
         .grillaProductos .col {
+            margin: 1rem;
             p{    
-                font-size: $tamanioFontCelular;
+                font-size: $tamanioFontTablet;
             }
             span{
                 @include palbraResaltada($tamanioFontTablet)
